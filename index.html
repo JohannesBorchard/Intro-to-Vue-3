@@ -14,13 +14,15 @@
 
       <div class="cart">Cart({{ cart }})</div>
       
-      <product-display></product-display>
+      <product-display :premium="premium"></product-display>
+      <product-details :details="details"></product-details>
       
     </div>
 
     <!-- Import App -->
     <script src="./main.js"></script>
-    <script src="./compontents/ProductDisplay.js"></script>
+    <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/ProductDetails.js"></script>
 
     <!-- Mount App -->
     <script>
