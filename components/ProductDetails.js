@@ -1,14 +1,15 @@
 app.component("product-details", {
 	props: {
 		details: {
-			type: array,
+			type: Array,
 			required: true,
 		},
 	},
 	template:
 		/*html*/
 		`<div>
-    {{details[0]}}
+    <ul>
+    <li v-for="detail in details">{{detail}}</li>
+    </ul>
   </div>`,
-	
 });
